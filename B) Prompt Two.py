@@ -58,7 +58,7 @@ def reset_board():
     board = [["" for _ in range(3)] for _ in range(3)]
     for row in range(3):
         for col in range(3):
-            buttons[row][col].config(text="", bg="#A3D5FF")  # Pale yellow buttons
+            buttons[row][col].config(text="", bg="#A3D5FF")  #Blue buttons
 
 # Create buttons for the grid with colors
 buttons = [[None for _ in range(3)] for _ in range(3)]
@@ -66,7 +66,7 @@ for row in range(3):
     for col in range(3):
         button = tk.Button(root, text="", font=("Gill Sans MT", 40), width=5, height=2,
                            command=lambda r=row, c=col: button_click(r, c),
-                           bg="#A3D5FF")  # Pale yellow button background
+                           bg="#A3D5FF")  #Blue button background
         button.grid(row=row, column=col, padx=5, pady=5)
         buttons[row][col] = button
 
